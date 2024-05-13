@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/eduskills.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="./js/typeWriter.js"></script>
+</head>
+
+<style>
+    /*Srcoll-bar*/
+    ::-webkit-scrollbar
+    {
+      width: 8px;
+      background-color: rgb(26, 17, 23);
+    }
+    
+    ::-webkit-scrollbar-thumb
+    {
+      background-color: rgb(21, 109, 119);
+      height: 9px;
+    }
+</style>
+<body>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    
+    <div class="home">
+        <div class="content">
+            <h3>Hello, My name is</h3>
+            <div>
+                <h1>Abhishek Airan</h1>
+            </div>
+            <h2>I'm a <span class="role" data-wait="1000"
+                    data-words='["Programmer.","Coding Enthusiast ","Passionate Learner."]''
+                    data-wait='3000'></span></h2>
+            <a class="resume-button" href="#">Resume</a>
+
+        </div>
+        <!-- For Background Animation -->
+        <div class="box1 box"></div>
+        <div class="box2 box"></div>
+        <div class="box3 box"></div>
+        <div class="box4 box"></div>
+        <div class="box5 box"></div>
+    </div>
+
+    
+    <!-- About Page -->
+    <div class="about part" id="About">
+        <div class="title">
+            <h1>About Me</h1>
+            <hr>
+        </div>
+        <div class="wrap">
+            <div class="heading" data-aos="fade-right">
+                <h2>Abhishek Airan</h2>
+            </div>
+            <div class="aboutMe" data-aos="fade-right" data-aos-anchor=".heading">
+                <p>I'm a Second year BCA student at <a href="http://www.paruluniversity.ac.in/" target="_blank">Parul University</a>, I would describe myself as an avid learner with an immense passion for technology 
+                    <span></span> My skills range from <span>Web development, programming in Python, Java & JavaScript</span>,
+                </p>
+                <p>I enjoy learning new skills and implementing them in real life!<br>
+                    I am a believer of peer learning and always ready to share my knowledge.</p>
+            </div>
+            <div class="socials" data-aos="flip-up">
+                <a href="mailto:abhishekairan1234@gmail.com" target="_blank">
+                    <img src="assets/icons/mail.svg" alt="Email">
+                </a>
+                <a href="https://github.com/abhishekairan" target="_blank">
+                    <img src="assets/icons/github.svg" alt="Github">
+                </a>
+                <a href="https://www.linkedin.com/in/abhishek-airan-0ba052260/" target="_blank">
+                    <img src="assets/icons/linkedin.svg" alt="LinkedIn">
+                </a>
+            </div>
+
+                <div class="img" data-aos="fade-left">
+                <img src="./assets/img/profilepic.jpg" alt="Picture of megha">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Skills and Education Page -->
+    <div class="eduskills part" id="eduskills">
+        <div class="title">
+            <hr>
+            <h1>Skills & Education</h1>
+        </div>
+        <div class="wrap">
+            <!-- Skills -->
+            <div class="skillstitle" data-aos="fade-down">
+                <h2>Skills</h2>
+            </div>
+
+            <div class="python" data-aos="fade-right"> 
+                <div class="skillinfo">
+                    <h6>Python</h6>
+                    <h6>90%</h6>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar"></div>
+                </div>
+            </div>
+
+            <div class="html" data-aos="fade-left"> 
+                <div class="skillinfo">
+                    <h6>Html</h6>
+                    <h6>80%</h6>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar"></div>
+                </div>
+            </div>
+
+            <div class="css" data-aos="fade-right"> 
+                <div class="skillinfo">
+                    <h6>CSS</h6>
+                    <h6>70%</h6>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar"></div>
+                </div>
+            </div>
+
+            <div class="java" data-aos="fade-left"> 
+                <div class="skillinfo">
+                    <h6>Java</h6>
+                    <h6>75%</h6>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar"></div>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div class="educationtitle" data-aos="fade-down">
+                <h2>Education</h2>
+            </div>
+            
+            <div class="Education" data-content id="education">
+                <!-- IMCA -->
+                <div class="qualification_data">
+                    <div>
+                        <h3 class="qualification_title">IMCA</h3>
+                        <span class="qualification_subtitle">Parul University
+        </span>
+                        <div class="qualification_calendar">
+                            <i class="uil uil-calendar-alt"></i> 2022 - 2026
+                        </div>
+                    </div>
+
+                    <div>
+                        <span class="qualification_circle"></span>
+                        <span class="qualification_line"></span>
+                    </div>
+                </div>
+
+                <!-- School 11-12 -->
+                <div class="qualification_data">
+                    <div></div>
+
+                    <div>
+                        <span class="qualification_circle"></span>
+                        <span class="qualification_line"></span>
+                    </div>
+
+                    <div>
+                        <h3 class="qualification_title">Senior Secondary School</h3>
+                        <span class="qualification_subtitle">Carmel Convent Sr. Sec. School, Neemuch</span>
+                        <div class="qualification_calendar">
+                            <i class="uil uil-calendar-alt"></i> 2020 - 2022
+                        </div>
+                    </div>
+                </div>
+
+                <!-- School 1-10 -->
+                <div class="qualification_data">
+                    <div>
+                        <h3 class="qualification_title ten">Secondary School</h3>
+                        <span class="qualification_subtitle">Carmel Convent Sr. Sec. School, Neemuch</span>
+                        <div class="qualification_calendar">
+                            <i class="uil uil-calendar-alt"></i> 2010 - 2020
+                        </div>
+                    </div>
+                    <div>
+                        <span class="qualification_circle"></span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

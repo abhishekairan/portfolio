@@ -1,0 +1,252 @@
+.eduskills hr{
+    margin: 0;
+    width: 53%;
+}
+
+.eduskills .wrap{
+    display: grid;
+    grid-template-areas: 'skillstitle educationtitle'
+                         'skill1 education'
+                         'skill2 education'
+                         'skill3 education'
+                         'skill4 education'
+                         'skill5 education';
+}
+
+.skillstitle{
+    display: grid;
+    grid-area: skillstitle;
+    font-size: 2rem;
+    justify-content: center;
+    color: #E7E9E9;
+}
+
+.educationtitle{
+    display: grid;
+    grid-area: educationtitle;
+    font-size: 2rem;
+    justify-content: center;
+    color: #E7E9E9;
+}
+
+.skillinfo{
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #e7e9e9;
+}
+
+.skillinfo h6{
+    margin: 5px;
+}
+
+.progress {
+    display: flex;
+    height: 1rem;
+    overflow: hidden;
+    line-height: 0;
+    font-size: 0.75rem;
+    background-color: #e9ecef;
+    border-radius: 10px;
+    width: 50vh;
+}
+
+.progress-bar {
+    display: flex;
+    border-radius: 20px;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+}
+
+
+.python{
+    display: grid;
+    grid-area: skill1;
+    margin-top: 2vw;
+}
+
+.python .progress-bar{
+    background-color: #ffc107 ;
+    transition: width 0.6s ease;
+    width: 90%;
+}
+
+.html{
+    display: grid;
+    grid-area: skill2;
+    margin-top: 2vw;
+}
+
+.html .progress-bar{
+    background-color: #dc3545;
+    transition: width 0.6s ease;
+    width: 80%;
+}
+
+.css{
+    display: grid;
+    grid-area: skill3;
+    margin-top: 2vw;
+}
+
+.css .progress-bar{
+    background-color: #17a2b8;
+    transition: width 0.6s ease;
+    width: 70%;
+}
+
+.java{
+    display: grid;
+    grid-area: skill4;
+    margin-top: 2vw;
+}
+
+.java .progress-bar{
+    background-color: #0BCEAF;
+    transition: width 0.6s ease;
+    width: 75%;
+}
+
+.Education{
+    display: grid;
+    grid-area: education;
+    color: white;
+}
+
+/* QUALIFICATION */
+.qualification_tabs {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: var(--mb-2);
+  }
+  
+  .qualification_button {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    color: var(--first-color);
+    cursor: pointer;
+  }
+  
+  .qualification_button:hover {
+    color: var(--first-color);
+  }
+  
+  .qualification_icon {
+    font-size: 1.8rem;
+    margin-right: var(--mb-0-25);
+  }
+  
+  .qualification_data {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 1.5rem;
+    justify-items: end;
+  }
+  
+  .qualification_title {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+  }
+
+  .ten{
+    display: grid;
+    justify-items: end;
+  }
+  
+  .qualification_subtitle {
+    display: inline-block;
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-1);
+  }
+  
+  .qualification_calendar {
+    font-size: var(--smaller-font-size);
+    color: var(--text-color-light);
+  }
+  
+  .qualification_circle {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: #28B586;
+    border-radius: 50%;
+  }
+  
+  .qualification_line {
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: #28B586;
+    transform: translate(6px, -7px);
+  }
+  
+  .qualification-content {
+    display: block;
+  }
+  
+  .qualification-inactive {
+    display: none;
+  }
+  
+/* 
+@keyframes progress-bar-stripes {
+    from {
+      background-position: 1rem 0;
+    }
+    to {
+      background-position: 0 0;
+    }
+  } 
+  
+  
+  
+  @media (prefers-reduced-motion: reduce) {
+    .progress-bar {
+      transition: none;
+    }
+  }
+  
+  .progress-bar-striped {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-size: 1rem 1rem;
+  }
+  
+  .progress-bar-animated {
+    animation: progress-bar-stripes 1s linear infinite;
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .progress-bar-animated {
+      animation: none;
+    }
+  }
+  
+.progress .progress-bar{
+    width: 0px;
+    border-radius: 10px;
+    transition: 2s;
+}
+*/
+
+
+@media only screen and (max-width: 600px){
+    .eduskills .wrap{
+        grid-template-areas: 'skillstitle'
+                             'skill1'
+                             'skill2'
+                             'skill3'
+                             'skill4'
+                             'skill5'
+                             'educationtitle'
+                             'education';
+    }
+    .progress{
+        width: 90vw;
+    }
+}
