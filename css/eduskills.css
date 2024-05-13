@@ -72,7 +72,7 @@
 }
 
 .python .progress-bar{
-    background-color: #ffc107 ;
+    background-color: #3C76A9;
     transition: width 0.6s ease;
     width: 90%;
 }
@@ -84,7 +84,7 @@
 }
 
 .html .progress-bar{
-    background-color: #dc3545;
+    background-color: #E4532C;
     transition: width 0.6s ease;
     width: 80%;
 }
@@ -96,22 +96,35 @@
 }
 
 .css .progress-bar{
-    background-color: #17a2b8;
+    background-color: #2963E9;
     transition: width 0.6s ease;
     width: 70%;
 }
 
 .java{
-    display: grid;
-    grid-area: skill4;
-    margin-top: 2vw;
+  display: grid;
+  grid-area: skill4;
+  margin-top: 2vw;
 }
 
 .java .progress-bar{
-    background-color: #0BCEAF;
-    transition: width 0.6s ease;
-    width: 75%;
+  background-color: #0BCEAF;
+  transition: width 0.6s ease;
+  width: 75%;
 }
+
+.javascript{
+  display: grid;
+  grid-area: skill5;
+  margin-top: 2vw;
+}
+
+.javascript .progress-bar{
+  background-color: #ffc107;
+  transition: width 0.6s ease;
+  width: 45%;
+}
+
 
 .Education{
     display: grid;
@@ -245,6 +258,9 @@
                              'skill5'
                              'educationtitle'
                              'education';
+    }
+    .eduskills .title hr{
+        display: none;
     }
     .progress{
         width: 90vw;
