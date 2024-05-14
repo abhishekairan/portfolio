@@ -1,0 +1,92 @@
+.projects hr{
+    width: 72%;
+}
+.projectwrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.projectcard{
+    height: 500px;
+    width: 300px;
+    background: white;
+    position: relative;
+    overflow: hidden;
+}
+.cardImage{
+    height: 500px;
+    width: 300px;
+    background: white;
+}
+.cardcontent{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    left: -100%; 
+    color: white;
+    display: grid;
+    grid-template-areas: 'title' 'description';
+    justify-items: center;
+}
+.cardcontent h3{
+    grid-area: title;
+    font-size: 32px;
+    color: #F14B4B;
+}
+.cardcontent p{
+    grid-area: description;
+    align-self: center;
+    padding-bottom: 20px;
+    color: white;
+    text-align: center;
+}
+.projectcard:hover{
+    cursor: pointer;
+}
+.projectcard:hover .projectcard:active .projectcard:focus img{
+    transform: scale(110%);
+    transition: all 0.3s;
+}
+.projectcard:hover .cardcontent{
+    left: 0;
+    animation: fade-in 0.5s;
+
+}
+
+
+@keyframes fade-in {
+    0% {
+        background-color: rgba(0,0,0,0.0);
+    }
+    100% {
+        background-color: rgba(0,0,0,0.5);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .projectwrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .projectcard{
+        margin-top: 20px;
+    }
+
+}
+
+@media (hover: none){
+    
+    .projectcard img{
+        transform: scale(110%);
+    }
+    .projectcard .cardcontent{
+        left: 0;
+        animation: fade-in 0.5s;
+
+    }
+}
