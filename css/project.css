@@ -76,6 +76,10 @@
     .projectcard{
         margin-top: 20px;
     }
+    .projects .title hr{
+        display: block;
+        width: 50%;
+    }
 
 }
 

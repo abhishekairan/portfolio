@@ -259,6 +259,9 @@
                              'educationtitle'
                              'education';
     }
+    .eduskills .title h1{
+      text-align: center;
+    }
     .eduskills .title hr{
         display: none;
     }
