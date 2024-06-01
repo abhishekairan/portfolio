@@ -162,10 +162,6 @@
     justify-items: end;
   }
   
-  .qualification_title {
-    font-size: var(--normal-font-size);
-    font-weight: var(--font-medium);
-  }
 
   .ten{
     display: grid;
